@@ -1,2 +1,8 @@
-# definaru.github.io
-Страница для гостей - https://definaru.github.io
+# Happy shopping
+---
+Тестовая разработка сайта на Python 3.
+
+- Админ панель
+- Личный кабинет
+- Каталог товаров
+
