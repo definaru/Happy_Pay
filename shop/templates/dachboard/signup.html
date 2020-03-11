@@ -1,0 +1,37 @@
+{% extends "dachboard/layout/index.html" %}
+{% block title %}Форма регистрации{% endblock title %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 offset-md-4 text-center pt-5 mt-5">
+			<h3 class="mb-3 d-block">Форма регистрации</h3>	
+		</div>	
+		<div class="col-md-4 offset-md-4">
+		
+			<div class="jumbotron p-4">
+				<form action="/action_page/">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Введите ваше имя">
+					</div>					
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Введите e-mail адрес">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Введите пароль">
+					</div>
+					<button type="submit" class="btn btn-danger btn-block">Зарегистрироваться</button>
+				</form>	
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p class="pt-3 text-muted"><a href="{% url 'home' %}">На главную</a> | <a href="{% url 'login' %}">Авторизация</a></p>
+					</div>					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+{% endblock content %}
+{% block script %}{% endblock script %}

@@ -1,0 +1,18 @@
+{% extends "store/home.html" %}
+{% block meta %}{% endblock meta %}
+{% block title %}О компании{% endblock title %}
+
+{% block content %}
+<h1>О компании</h1>
+
+  {% if user.is_authenticated %}
+    <p>Your account doesn't have access to this page. To proceed,
+    please login with an account that has access.</p>
+  {% else %}
+    <p>Please login to see this page.</p>
+  {% endif %}
+  <a href="{% url 'login' %}">Click here to login again.</a>
+  
+{% endblock content %}
+
+{% block script %}{% endblock script %}

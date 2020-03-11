@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static "css/bootstrap/bootstrap.min.css" %}" />
+    {% block meta %}
+        <meta property="og:locale" content="ru-RU" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Classic Shop - Flatsome" />
+        <meta property="og:url" content="https://flatsome3.uxthemes.com/demos/shop-demos/classic-shop/" />
+        <meta property="og:site_name" content="Flatsome" />
+        <meta property="og:image" content="https://flatsome3.uxthemes.com/wp-content/uploads/2013/08/classic-shop.jpg" />
+    {% endblock meta %}
+    <title>{% block title %}Dashboard | Admin Panel{% endblock title %}</title>
+</head>
+<body class="bg-light">
+	{% block content %}
+	...
+	{% endblock content %}
+	
+	
+	<script src="{% static "js/jquery/jquery.min.js" %}"></script>
+	<script src="{% static "js/popper/popper.min.js" %}"></script>
+	<script src="{% static "js/bootstrap/bootstrap.min.js" %}"></script>
+    {% block script %}{% endblock script %}
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>    
+</body>
+</html>
